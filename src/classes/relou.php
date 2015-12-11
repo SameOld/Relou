@@ -29,6 +29,7 @@ class relou
 
         if($request->fetch()){
             return true;
+
         }
 
         return false;
