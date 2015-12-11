@@ -17,19 +17,38 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/assets/js/module.js"> </script>
+    <script src="/assets/js/search.js"> </script>
+
 
 </head>
 
-<body>
-
-<div class="alert alert-danger" role="alert">
-    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-    <span class="sr-only">Error:</span>
-    Enter a valid email address
+<body class="container">
+<div class="row">
+    <div class="col-lg-12">
+        <?php
+            include_once("include/header.php");
+        ?>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        Gauche
+    </div>
+    <div class="col-md-6">
+        <?php
+            include_once("include/search.php")
+        ?>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        FOOTER
+    </div>
 </div>
 
 
-
 </body>
+
+
 
 </html>
